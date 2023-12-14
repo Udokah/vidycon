@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="assets/css/lineicons.css">
 		<link rel="stylesheet" href="assets/css/animate.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+        <script async src="https://js.stripe.com/v3/buy-button.js">
+      </script>
     </head>
     <body>
    
@@ -62,25 +64,10 @@
                                 <!-- countdown ed  -->
 
                                 <!-- sunscribe-form start  -->
-                                <form
-                                    action="https://soonlaunch.us18.list-manage.com/subscribe/post?u=4dbefd9d3a1d6a570020b1e85&amp;id=e16d098ae8"
-                                    method="post" id="subscribe-form" name="subscribe-form"
-                                    class="subscribe-form subscribe-form-1 validate wow fadeInDown" data-wow-delay=".6s"
-                                    target="_blank" novalidate="">
-                                    <input type="email" name="EMAIL" id="EMAIL" class="required email"
-                                        placeholder="Your email address">
-
-                                    <div id="mce-responses" class="clear">
-                                        <div class="response" id="mce-error-response" style="display:none"></div>
-                                        <div class="response" id="mce-success-response" style="display:none"></div>
-                                    </div>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
-                                        type="text" name="b_4dbefd9d3a1d6a570020b1e85_e16d098ae8" tabindex="-1"
-                                        value=""></div>
-
-                                    <button id="subscribe" class="sub_btn common-btn">Subscribe for $5</button>
-                                </form>
+                                <div>
+                                    <stripe-buy-button buy-button-id="buy_btn_1ONF7iBPCrBLvpxKHe346PZN" publishable-key="pk_live_51ONEycBPCrBLvpxKpfEC0UUcAdAAc0mcHJcYhYYqkZh74oMEQsJhzgCzpi6L8s5yQBPe5QtZhQea3gjY0mM8ixYz00fKG9MzrX">
+                                    </stripe-buy-button>
+                                </div>
                                 <!-- subscribe-form end  -->
                             </div>
                             <!-- content-wrapper end  -->
